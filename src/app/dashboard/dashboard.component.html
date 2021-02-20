@@ -1,0 +1,17 @@
+<div fxLayout="column">
+    <div class="Header" fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-card class="inHeader">
+            <button mat-button>Add Box</button>
+        </mat-card>
+        <label class="label">Click to Turn {{value === 'OFF' ? 'ON' : 'OFF'}} keyboard</label>
+        <mat-card class="inHeader2">
+            <button class="button2" mat-button
+                (click)="KeywordButton(value === 'OFF' ? 'OFF' : 'ON')">{{value}}</button>
+        </mat-card>
+    </div>
+    <div fxLayout="row" fxLayoutGap="55px" fxLayoutAlign="start center">
+        <mat-card class="Box" fxLayout="column">
+           
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+.Header {
+    margin-top: 2%;
+    margin-bottom: 55px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    padding: 2%;
+    place-content: center flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+.inHeader{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+    padding: 0%;
+    margin-left: 15%;
+}
+
+.inHeader2{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
+    padding: 0%;
+    margin-right: 24%;
+}
+
+.label{
+    margin-left: 33%;
+}
+  
+.button {
+background-color: grey;
+}
+
+.button2 {
+    background-color: red;
+    color: white;
+}
+
+.Box {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 10%;
+    line-height: 3900%;
+    width: 70%;
+    margin-top: -2%;
+}
