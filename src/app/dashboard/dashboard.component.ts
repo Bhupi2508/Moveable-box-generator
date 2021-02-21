@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
   data: any
   value: any = 'OFF'
   valueData: any
+  items: any
 
   ngOnInit(): void {
   }
@@ -23,4 +24,5 @@ export class DashboardComponent implements OnInit {
       this.value = "OFF"
     }
   }
+
 }

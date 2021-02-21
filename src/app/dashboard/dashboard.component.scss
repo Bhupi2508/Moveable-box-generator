@@ -32,7 +32,7 @@
 }
 
 .label{
-    margin-left: 33%;
+    margin-left: 38%;
 }
   
 .button {
@@ -44,6 +44,11 @@ background-color: grey;
     color: white;
 }
 
+.afterClickButton {
+    background-color: green;
+    color: white;
+}
+
 .Box {
     flex-direction: column;
     box-sizing: border-box;
@@ -51,5 +56,17 @@ background-color: grey;
     margin-left: 10%;
     line-height: 3900%;
     width: 70%;
-    margin-top: -2%;
+    -webkit-user-modify: read-write-plaintext-only;
+     flex-flow: wrap;
+}
+
+.boxes{
+    flex-flow: wrap;
+    display: flex;
+}
+
+.label2{
+    margin-top: -2.5%;
+    margin-left: 2%;
+    color: red;
 }
