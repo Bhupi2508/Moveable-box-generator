@@ -22,13 +22,15 @@ export class DashboardComponent implements OnInit {
   value: any = 'OFF'
   valueData: any
   items: any
+  xData: any = "50"
+  yData: any = "20"
 
   ngOnInit(): void {
   }
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-  
+
 
     if (this.value === 'ON') {
       console.log(event);
@@ -55,23 +57,23 @@ export class DashboardComponent implements OnInit {
   }
 
   dKey() {
-   
+    this.xData++
   }
 
   aKey() {
-   
+    this.xData--
   }
 
   wKey() {
-    
+    this.yData--
   }
 
   sKey() {
-    
+    this.yData++
   }
 
   delKey() {
-   
+
   }
 
   KeywordButton(data: string) {
