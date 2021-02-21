@@ -24,6 +24,12 @@ export class DashboardComponent implements OnInit {
   items: any
   xData: any = "50"
   yData: any = "20"
+  heightData: any = "150"
+  widthData: any = "150"
+  mainWidth: any = "400"
+  mainHeight: any = "180"
+  createBox: any
+  id: any = "0"
 
   ngOnInit(): void {
   }
@@ -76,6 +82,10 @@ export class DashboardComponent implements OnInit {
 
   }
 
+  uniqueId() {
+    this.id++
+  }
+
   KeywordButton(data: string) {
     if (data == "OFF") {
       this.value = "ON"
@@ -85,11 +95,18 @@ export class DashboardComponent implements OnInit {
   }
 
   addBox() {
-    // for (let i = 0; i < this.box.length; i++) {
-    //   if (this.box.length >= 1) {
-    //     this.items = 1
-    //   }
-    // }
+    this.uniqueId()
+    this.createBox = document.getElementById("svgbox")
+    const newElement = document.createElement('svg');
+    newElement.id = this.id
+    newElement.innerHTML = `<svg width="${this.mainWidth}" height="${this.mainHeight}">
+                            <rect x="${this.xData}" y="${this.yData}" height="${this.heightData}" width="${this.widthData}"
+                            style="fill:green;stroke:black;stroke-width:5;opacity:0.5" />
+                            </svg>`
+    this.createBox.appendChild(newElement)
+    console.log("element svgbox", newElement);
+
+
   }
 
 }
