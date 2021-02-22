@@ -18,4 +18,4 @@ Project is created on
 Install it locally using npm:
 
  - npm install
- - npm start
+ - ng serve --open
